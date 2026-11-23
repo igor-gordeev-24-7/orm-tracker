@@ -5,7 +5,7 @@ from models import User, Task
 def main() -> None:
     user_id_raw = input("ID пользователя: ").strip()
     title = input("Название: ").strip()
-    priority = input("Приоритет: ").strip().lower()
+    priority = input("Приоритет: ").strip().lower() or "low"
 
     user_id = int(user_id_raw)
 
