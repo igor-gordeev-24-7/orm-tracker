@@ -28,7 +28,7 @@ class Task(Base):
     )
     title: Mapped[str] = mapped_column(String(100), nullable=False)
     description: Mapped[str | None] = mapped_column(Text, nullable=True)
-    priority: Mapped[int] = mapped_column(
+    priority: Mapped[str] = mapped_column(
         String(10),
         nullable=False,
         server_default="low",
