@@ -1,8 +1,7 @@
-import datetime
+from datetime import datetime
 
 from sqlalchemy import String, DateTime, func, ForeignKey, Text, Boolean
-from sqlalchemy.orm import DeclarativeBase, Mapper, Mapped, relationship
-from sqlalchemy.testing.schema import mapped_column
+from sqlalchemy.orm import DeclarativeBase, Mapped, relationship, mapped_column
 
 
 class Base(DeclarativeBase):
